@@ -5,8 +5,8 @@ form {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f7f5f6;
-    border: 1px solid #AC92A6;
+    background-color: rgb(254, 254, 254);
+    border: 1px solid #a4a4a4;
     border-radius: 8px;
 
 }
@@ -18,7 +18,7 @@ div {
 p.form-group {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #ecece6;
+    color: #050505;
 }
 
 .form-group {
@@ -28,24 +28,24 @@ p.form-group {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #ecece6;
+    color:#050505;
 }
 
 input.form-control {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #a4a4a4;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    background-color: #fff;
+    background-color: #a4a4a4;
     color: #333;
 }
 
 input.form-control:focus {
     border-color: #007bff;
     outline: none;
-    box-shadow: 0 0 5px #3F4045(0, 123, 255, 0.25);
+    box-shadow: 0 0 5px #a4a4a4(0, 123, 255, 0.25);
 }
 
 input[required] {
@@ -57,7 +57,7 @@ input[required] {
 }
 
 input.btn-custom {
-    background-color: #4a054e;
+    background-color: #050505;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -68,7 +68,7 @@ input.btn-custom {
 }
 
 input.btn-custom:hover {
-    background-color: #4a054e;
+    background-color: #262525;
 }
 
 
@@ -83,7 +83,7 @@ input.btn-custom:hover {
 /* Estilo geral da página */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #88aef0;  
+    background-color: #050505;  
     display: flex;
     justify-content: center; 
     align-items: center;     
@@ -94,11 +94,12 @@ body {
 
 /* Estilo do cartão */
 .cartao {
-    background-color: #AC92A6; 
+    background-color: #ffffff; 
     display: flex;  
     padding: 20px;
+    border: 1px solid #a4a4a4;
     border-radius: 10px;  
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  
+    box-shadow: 0 10px 20px rgb(245, 245, 245);  
     width: 600px;  
     font-size: 16px;
 }
@@ -107,7 +108,7 @@ body {
 hr {
     border: none; 
     height: 1px; 
-    background-color: #ddd; 
+    background-color: #a4a4a4; 
     margin-bottom: 20px;
 }
 /* Estilo das informações */
@@ -118,21 +119,21 @@ hr {
 .informacoes h2 {
     text-align: left;
     font-size: 24px;
-    color: #f4f6f8; 
+    color: #050505; 
     margin-bottom: 20px;
     font-weight: 600;
 }
 
 .informacoes p {
     margin-bottom: 10px;
-    color: #f4f6f8;  
+    color: #050505;  
     font-size: 14px;
 }
 
 
 .informacoes p strong {
     font-weight: bold;
-    color: #f6f6f6;  
+    color: #050505;  
 }
 
 
@@ -146,7 +147,7 @@ hr {
 }
 
 .btn-custom {
-    background-color: #4a054e;  
+    background-color: #050505;  
     color: white;
     padding: 10px 20px;
     border: none;
@@ -157,7 +158,7 @@ hr {
 }
 
 .btn-custom:hover {
-    background-color: #4a054e;  
+    background-color: #363535;  
 }
 
 .validation-error p{
