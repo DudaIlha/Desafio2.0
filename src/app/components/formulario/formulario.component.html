@@ -1,0 +1,85 @@
+<div *ngIf="!showResult">
+    <form [formGroup]="formCliente" (ngSubmit)="onSubmit()" #formDir="ngForm">
+        <div>
+            <p class="form-group">Identificação</p>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" formControlName="nome" required>
+                <div *ngIf="nome.invalid" class="validation-error">
+                    <p *ngIf="nome.errors?.['required']">O nome é obrigatorio.</p>
+                    <p *ngIf="nome.errors?.['minlength']">Mínimo de 3 caracteres.</p>
+                    <p *ngIf="nome.errors?.['maxlength']">Máximo de 200 caracteres.</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" class="form-control" name="idade" id="idade" formControlName="idade" required>
+                <div *ngIf="idade.invalid" class="validation-error">
+                    <p *ngIf="idade.errors?.['required']">A idade é obrigatoria.</p>
+                    <p *ngIf="idade.errors?.['min']">Você deve informar uma idade maior que 1.</p>
+                    <p *ngIf="idade.errors?.['max']">Você deve informar uma idade menor que 120.</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" class="form-control" name="telefone" id="telefone" formControlName="telefone"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" name="email" id="email" formControlName="email" required>
+            </div>
+        </div>
+
+        <div>
+            <p class="form-group"></p>
+            <div class="form-group">
+                <label for="endereço">Endereço</label>
+                <input type="text" class="form-control" name="endereco" id="endereco" formControlName="endereco"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="numero">Número</label>
+                <input type="number" class="form-control" name="numero" id="numero" formControlName="numero" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" name="bairro" id="bairro" formControlName="bairro" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input type="cidade" class="form-control" name="cidade" id="cidade" formControlName="cidade" required>
+            </div>
+        </div>
+        <div class="btn-container">
+            <input type="submit" class="btn-custom" value="Salvar">
+            <input type="reset" class="btn-custom" value="Limpar">
+        </div>
+    </form>
+</div>
+
+<div *ngIf="showResult">
+    <div class="cartao">
+        <div class="informacoes">
+            <h2>Informações do Cliente</h2>
+            <hr>
+            <p><strong>Nome:</strong> {{ cliente.nome }}</p>
+            <p><strong>Idade:</strong> {{ cliente.idade }}</p>
+            <p><strong>E-mail:</strong> {{ cliente.email }}</p>
+            <p><strong>Telefone:</strong> {{ cliente.telefone }}</p>
+            <p><strong>Endereço:</strong> {{ cliente.endereco }}</p>
+            <p><strong>Número:</strong> {{ cliente.numero }}</p>
+            <p><strong>Bairro:</strong> {{ cliente.bairro }}</p>
+            <p><strong>Cidade:</strong> {{ cliente.cidade }}</p>
+        </div>
+    </div>
+    <div class="btn-container">
+        <input type="submit" class="btn-custom" value="Voltar" (click)="voltar()">
+    </div>
+</div>

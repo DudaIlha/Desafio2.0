@@ -1,0 +1,167 @@
+* {font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f5f6;
+    border: 1px solid #AC92A6;
+    border-radius: 8px;
+
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+p.form-group {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ecece6;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ecece6;
+}
+
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px #3F4045(0, 123, 255, 0.25);
+}
+
+input[required] {
+    background-color:  #f6f8f6;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+input.btn-custom {
+    background-color: #4a054e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input.btn-custom:hover {
+    background-color: #4a054e;
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #88aef0;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;
+    color: #f1ebeb;  
+}
+
+/* Estilo do cartão */
+.cartao {
+    background-color: #AC92A6; 
+    display: flex;  
+    padding: 20px;
+    border-radius: 10px;  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  
+    width: 600px;  
+    font-size: 16px;
+}
+
+
+hr {
+    border: none; 
+    height: 1px; 
+    background-color: #ddd; 
+    margin-bottom: 20px;
+}
+/* Estilo das informações */
+.informacoes {
+    flex: 1;  
+}
+
+.informacoes h2 {
+    text-align: left;
+    font-size: 24px;
+    color: #f4f6f8; 
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.informacoes p {
+    margin-bottom: 10px;
+    color: #f4f6f8;  
+    font-size: 14px;
+}
+
+
+.informacoes p strong {
+    font-weight: bold;
+    color: #f6f6f6;  
+}
+
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-container input{
+    margin: 0 10px;
+}
+
+.btn-custom {
+    background-color: #4a054e;  
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #4a054e;  
+}
+
+.validation-error p{
+    color: #cd1b1bc4;
+    padding: 5px;
+
+}
